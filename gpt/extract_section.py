@@ -2,33 +2,16 @@ import os
 import sys
 from openai import OpenAI
 from dotenv import load_dotenv
-
-# Define your project root
-project_root = "/Users/gencsaracaydin/marker-pdf-parser"
-env_path = os.path.join(project_root, '.env')
-
-# Check if .env file exists (just for verification)
-if os.path.exists(env_path):
-    print(f".env file found at: {env_path}")
-else:
-    print(f"[ERROR] .env file not found at: {env_path}")
-    print("This is unusual since you confirmed it exists with nano.")
-    print("Check if the path is correct.")
-    sys.exit(1)
+import datetime
 
 # Load environment variables
-print("Loading environment variables...")
-load_dotenv(env_path)
+load_dotenv()
 
-# Get API key from environment variable (and print a masked version for verification)
+# Get API key from environment variable
 api_key = os.getenv("OPENAI_API_KEY")
-if api_key:
-    # Mask the API key for security when printing
-    masked_key = api_key[:4] + "..." + api_key[-4:] if len(api_key) > 8 else "****"
-    print(f"API key loaded successfully: {masked_key}")
-else:
-    print("[ERROR] OPENAI_API_KEY environment variable not set in .env file.")
-    print("Your .env file should contain a line like: OPENAI_API_KEY=sk-your-key-here")
+if not api_key:
+    print("[ERROR] OPENAI_API_KEY environment variable not set.")
+    print("Please check your .env file or set it in your environment.")
     sys.exit(1)
 
 # Initialize OpenAI client
@@ -67,9 +50,37 @@ def call_chatgpt(prompt_text):
         except Exception as e:
             return f"Error with fallback model: {e}"
 
+def save_output(result, input_file_path):
+    # Extract filename without extension and parent directory name
+    parent_dir = os.path.basename(os.path.dirname(input_file_path))
+    file_name = os.path.splitext(os.path.basename(input_file_path))[0]
+    
+    # Create output directory if it doesn't exist
+    output_dir = os.path.join("/Users/gencsaracaydin/marker-pdf-parser/outputs", parent_dir)
+    os.makedirs(output_dir, exist_ok=True)
+    
+    # Create timestamp for the filename
+    timestamp = datetime.datetime.now().strftime("%Y%m%d_%H%M%S")
+    
+    # Create output file path
+    output_file = os.path.join(output_dir, f"{file_name}_procedure_{timestamp}.md")
+    
+    # Write the result to the file
+    with open(output_file, "w") as f:
+        f.write(result)
+    
+    print(f"Output saved to: {output_file}")
+    return output_file
+
 if __name__ == "__main__":
     print("Running extract_section.py...")
-    file_path = "/Users/gencsaracaydin/Documents/protocol_outputs1/CAM4-14-e70726/CAM4-14-e70726.md"
+    
+    # Check if a file path was provided as an argument
+    if len(sys.argv) < 2:
+        print("Usage: python3 extract_section.py <path_to_markdown_file>")
+        sys.exit(1)
+    
+    file_path = sys.argv[1]
     
     if not os.path.exists(file_path):
         print(f"[ERROR] File not found: {file_path}")
@@ -87,3 +98,7 @@ if __name__ == "__main__":
     
     print("\n[GPT-4 OUTPUT]\n")
     print(result)
+    
+    # Save the output to a file
+    saved_file = save_output(result, file_path)
+    print(f"Results have been saved to: {saved_file}")
