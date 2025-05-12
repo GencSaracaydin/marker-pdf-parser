@@ -1,0 +1,1129 @@
+{
+  "table_of_contents": [
+    {
+      "title": "Review",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          56.6048583984375,
+          43.75579833984375
+        ],
+        [
+          112.98900604248047,
+          43.75579833984375
+        ],
+        [
+          112.98900604248047,
+          59.263916015625
+        ],
+        [
+          56.6048583984375,
+          59.263916015625
+        ]
+      ]
+    },
+    {
+      "title": "Scalable Manufacturing of CAR T Cells for \nCancer Immunotherapy",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          57.02400207519531,
+          83.893798828125
+        ],
+        [
+          497.5406799316406,
+          83.893798828125
+        ],
+        [
+          497.5406799316406,
+          137.671875
+        ],
+        [
+          57.02400207519531,
+          137.671875
+        ]
+      ]
+    },
+    {
+      "title": "INTRODUCTION",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          56.42083740234375,
+          382.5087890625
+        ],
+        [
+          136.5850067138672,
+          382.5087890625
+        ],
+        [
+          136.5850067138672,
+          394.63330078125
+        ],
+        [
+          56.42083740234375,
+          394.63330078125
+        ]
+      ]
+    },
+    {
+      "title": "A DECADE OF ADVANCES IN CAR T CELL \nMANUFACTURING",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          68.3822021484375,
+          596.056640625
+        ],
+        [
+          272.55499267578125,
+          596.056640625
+        ],
+        [
+          272.55499267578125,
+          621.8701171875
+        ],
+        [
+          68.3822021484375,
+          621.8701171875
+        ]
+      ]
+    },
+    {
+      "title": "Sources to Obtain Starting Material for \nAutologous CAR T Cell Therapy",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          68.60302734375,
+          624.9990234375
+        ],
+        [
+          250.56298828125,
+          624.9990234375
+        ],
+        [
+          250.56298828125,
+          647.68359375
+        ],
+        [
+          68.60302734375,
+          647.68359375
+        ]
+      ]
+    },
+    {
+      "title": "Quality and Quantity of Starting Materials",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          315.6328125,
+          271.82373046875
+        ],
+        [
+          509.3701171875,
+          271.82373046875
+        ],
+        [
+          509.3701171875,
+          283.9482421875
+        ],
+        [
+          315.6328125,
+          283.9482421875
+        ]
+      ]
+    },
+    {
+      "title": "Obtaining Pure and Viable T Cells for Genetic \nModification",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          56.3104248046875,
+          667.2392578125
+        ],
+        [
+          262.2489929199219,
+          667.2392578125
+        ],
+        [
+          262.2489929199219,
+          690.7060546875
+        ],
+        [
+          56.3104248046875,
+          690.7060546875
+        ]
+      ]
+    },
+    {
+      "title": "Table 1. Academic manufacturing protocols for CAR T cell therapy",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          72.283447265625,
+          74.898193359375
+        ],
+        [
+          329.77899169921875,
+          74.898193359375
+        ],
+        [
+          329.77899169921875,
+          85.2626953125
+        ],
+        [
+          72.283447265625,
+          85.2626953125
+        ]
+      ]
+    },
+    {
+      "title": "THE EVOLUTION OF CAR T CELL \nMANUFACTURING PLATFORMS",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          316.2216796875,
+          632.0390625
+        ],
+        [
+          478.926025390625,
+          632.0390625
+        ],
+        [
+          478.926025390625,
+          657.8525390625
+        ],
+        [
+          316.2216796875,
+          657.8525390625
+        ]
+      ]
+    },
+    {
+      "title": "Shifting from Open to Functionally \nClosed Systems",
+      "heading_level": null,
+      "page_id": 4,
+      "polygon": [
+        [
+          56.1632080078125,
+          128.871826171875
+        ],
+        [
+          217.16001892089844,
+          128.871826171875
+        ],
+        [
+          217.16001892089844,
+          151.46478271484375
+        ],
+        [
+          56.1632080078125,
+          151.46478271484375
+        ]
+      ]
+    },
+    {
+      "title": "Replacing Manual Processing with Automation",
+      "heading_level": null,
+      "page_id": 4,
+      "polygon": [
+        [
+          56.384033203125,
+          547.55859375
+        ],
+        [
+          267.492919921875,
+          547.55859375
+        ],
+        [
+          267.492919921875,
+          558.509765625
+        ],
+        [
+          56.384033203125,
+          558.509765625
+        ]
+      ]
+    },
+    {
+      "title": "Moving from Autologous to Allogeneic Products",
+      "heading_level": null,
+      "page_id": 4,
+      "polygon": [
+        [
+          303.2666015625,
+          294.50830078125
+        ],
+        [
+          522.3251953125,
+          294.50830078125
+        ],
+        [
+          522.3251953125,
+          305.8505859375
+        ],
+        [
+          303.2666015625,
+          305.8505859375
+        ]
+      ]
+    },
+    {
+      "title": "GENETIC MODIFICATION STRATEGIES FOR \nCAR T CELLS",
+      "heading_level": null,
+      "page_id": 5,
+      "polygon": [
+        [
+          316.5,
+          585.10546875
+        ],
+        [
+          532.4508666992188,
+          585.10546875
+        ],
+        [
+          532.4508666992188,
+          611.701171875
+        ],
+        [
+          316.5,
+          611.701171875
+        ]
+      ]
+    },
+    {
+      "title": "Using Viral Vectors for Genetic Modification",
+      "heading_level": null,
+      "page_id": 5,
+      "polygon": [
+        [
+          315.92724609375,
+          614.0478515625
+        ],
+        [
+          518.49755859375,
+          614.0478515625
+        ],
+        [
+          518.49755859375,
+          624.9990234375
+        ],
+        [
+          315.92724609375,
+          624.9990234375
+        ]
+      ]
+    },
+    {
+      "title": "Adopting Nonviral Gene Delivery Systems",
+      "heading_level": null,
+      "page_id": 6,
+      "polygon": [
+        [
+          56.1632080078125,
+          361.388671875
+        ],
+        [
+          245.8499755859375,
+          361.388671875
+        ],
+        [
+          245.8499755859375,
+          372.33984375
+        ],
+        [
+          56.1632080078125,
+          372.33984375
+        ]
+      ]
+    },
+    {
+      "title": "Addressing Challenges to Genome Editing",
+      "heading_level": null,
+      "page_id": 6,
+      "polygon": [
+        [
+          304.5,
+          218.045654296875
+        ],
+        [
+          493.8800048828125,
+          218.045654296875
+        ],
+        [
+          493.8800048828125,
+          228.605712890625
+        ],
+        [
+          304.5,
+          228.605712890625
+        ]
+      ]
+    },
+    {
+      "title": "EFFORTS TO SHORTEN CAR T CELL \nMANUFACTURING TIME",
+      "heading_level": null,
+      "page_id": 7,
+      "polygon": [
+        [
+          68.455810546875,
+          620.69677734375
+        ],
+        [
+          246.4189910888672,
+          620.69677734375
+        ],
+        [
+          246.4189910888672,
+          645.6753997802734
+        ],
+        [
+          68.455810546875,
+          645.6753997802734
+        ]
+      ]
+    },
+    {
+      "title": "TRENDS IN QC OF THE FINAL CAR \nT CELL PRODUCT",
+      "heading_level": null,
+      "page_id": 8,
+      "polygon": [
+        [
+          56.4576416015625,
+          401.67333984375
+        ],
+        [
+          228.2589874267578,
+          401.67333984375
+        ],
+        [
+          228.2589874267578,
+          425.92236328125
+        ],
+        [
+          56.4576416015625,
+          425.92236328125
+        ]
+      ]
+    },
+    {
+      "title": "OTHER CONSIDERATIONS FOR SCALING CAR \nT CELL PRODUCTION",
+      "heading_level": null,
+      "page_id": 8,
+      "polygon": [
+        [
+          304.14990234375,
+          291.37939453125
+        ],
+        [
+          532.0569458007812,
+          291.37939453125
+        ],
+        [
+          532.0569458007812,
+          316.01953125
+        ],
+        [
+          304.14990234375,
+          316.01953125
+        ]
+      ]
+    },
+    {
+      "title": "CONCLUSION",
+      "heading_level": null,
+      "page_id": 10,
+      "polygon": [
+        [
+          56.82568359375,
+          281.6015625
+        ],
+        [
+          125.21099853515625,
+          281.6015625
+        ],
+        [
+          125.21099853515625,
+          293.72607421875
+        ],
+        [
+          56.82568359375,
+          293.72607421875
+        ]
+      ]
+    },
+    {
+      "title": "Authors' Disclosures",
+      "heading_level": null,
+      "page_id": 10,
+      "polygon": [
+        [
+          304.4443359375,
+          107.0672607421875
+        ],
+        [
+          398.55999755859375,
+          107.0672607421875
+        ],
+        [
+          398.55999755859375,
+          118.46478271484375
+        ],
+        [
+          304.4443359375,
+          118.46478271484375
+        ]
+      ]
+    },
+    {
+      "title": "Acknowledgments",
+      "heading_level": null,
+      "page_id": 10,
+      "polygon": [
+        [
+          304.14990234375,
+          269.8681640625
+        ],
+        [
+          387.3799743652344,
+          269.8681640625
+        ],
+        [
+          387.3799743652344,
+          280.46478271484375
+        ],
+        [
+          304.14990234375,
+          280.46478271484375
+        ]
+      ]
+    },
+    {
+      "title": "References",
+      "heading_level": null,
+      "page_id": 10,
+      "polygon": [
+        [
+          304.5,
+          419.66455078125
+        ],
+        [
+          359.208984375,
+          419.66455078125
+        ],
+        [
+          359.208984375,
+          429.83349609375
+        ],
+        [
+          304.5,
+          429.83349609375
+        ]
+      ]
+    }
+  ],
+  "page_stats": [
+    {
+      "page_id": 0,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          166
+        ],
+        [
+          "Line",
+          81
+        ],
+        [
+          "Text",
+          12
+        ],
+        [
+          "SectionHeader",
+          3
+        ],
+        [
+          "PageFooter",
+          2
+        ],
+        [
+          "Footnote",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0
+      }
+    },
+    {
+      "page_id": 1,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          227
+        ],
+        [
+          "Line",
+          119
+        ],
+        [
+          "Text",
+          8
+        ],
+        [
+          "SectionHeader",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "PageFooter",
+          2
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0
+      }
+    },
+    {
+      "page_id": 2,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          147
+        ],
+        [
+          "Line",
+          69
+        ],
+        [
+          "Text",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "PageFooter",
+          2
+        ],
+        [
+          "Figure",
+          1
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "FigureGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0
+      }
+    },
+    {
+      "page_id": 3,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          298
+        ],
+        [
+          "Line",
+          120
+        ],
+        [
+          "TableCell",
+          60
+        ],
+        [
+          "Text",
+          6
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "SectionHeader",
+          2
+        ],
+        [
+          "PageFooter",
+          2
+        ],
+        [
+          "Table",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0
+      }
+    },
+    {
+      "page_id": 4,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          223
+        ],
+        [
+          "Line",
+          119
+        ],
+        [
+          "Text",
+          9
+        ],
+        [
+          "SectionHeader",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "PageFooter",
+          2
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0
+      }
+    },
+    {
+      "page_id": 5,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          139
+        ],
+        [
+          "Line",
+          64
+        ],
+        [
+          "Text",
+          4
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "SectionHeader",
+          2
+        ],
+        [
+          "PageFooter",
+          2
+        ],
+        [
+          "Figure",
+          1
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "FigureGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0
+      }
+    },
+    {
+      "page_id": 6,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          239
+        ],
+        [
+          "Line",
+          120
+        ],
+        [
+          "Text",
+          7
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "SectionHeader",
+          2
+        ],
+        [
+          "PageFooter",
+          2
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0
+      }
+    },
+    {
+      "page_id": 7,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          164
+        ],
+        [
+          "Line",
+          78
+        ],
+        [
+          "Text",
+          4
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "PageFooter",
+          2
+        ],
+        [
+          "Figure",
+          1
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "FigureGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0
+      }
+    },
+    {
+      "page_id": 8,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          255
+        ],
+        [
+          "Line",
+          118
+        ],
+        [
+          "Text",
+          7
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "SectionHeader",
+          2
+        ],
+        [
+          "PageFooter",
+          2
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0
+      }
+    },
+    {
+      "page_id": 9,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          188
+        ],
+        [
+          "Line",
+          90
+        ],
+        [
+          "Text",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "PageFooter",
+          2
+        ],
+        [
+          "Figure",
+          1
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "FigureGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0
+      }
+    },
+    {
+      "page_id": 10,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          246
+        ],
+        [
+          "Line",
+          121
+        ],
+        [
+          "ListItem",
+          10
+        ],
+        [
+          "Text",
+          8
+        ],
+        [
+          "SectionHeader",
+          4
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "PageFooter",
+          2
+        ],
+        [
+          "ListGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0
+      }
+    },
+    {
+      "page_id": 11,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          356
+        ],
+        [
+          "Line",
+          140
+        ],
+        [
+          "ListItem",
+          40
+        ],
+        [
+          "PageFooter",
+          3
+        ],
+        [
+          "ListGroup",
+          2
+        ],
+        [
+          "PageHeader",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0
+      }
+    },
+    {
+      "page_id": 12,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          360
+        ],
+        [
+          "Line",
+          140
+        ],
+        [
+          "ListItem",
+          40
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "PageFooter",
+          2
+        ],
+        [
+          "ListGroup",
+          2
+        ],
+        [
+          "Text",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0
+      }
+    },
+    {
+      "page_id": 13,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          353
+        ],
+        [
+          "Line",
+          140
+        ],
+        [
+          "ListItem",
+          38
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "PageFooter",
+          2
+        ],
+        [
+          "ListGroup",
+          2
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0
+      }
+    },
+    {
+      "page_id": 14,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          198
+        ],
+        [
+          "Line",
+          80
+        ],
+        [
+          "ListItem",
+          22
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "PageFooter",
+          2
+        ],
+        [
+          "ListGroup",
+          2
+        ],
+        [
+          "Text",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0
+      }
+    }
+  ],
+  "debug_data_path": "debug_data/bloodcandisc-2-408"
+}

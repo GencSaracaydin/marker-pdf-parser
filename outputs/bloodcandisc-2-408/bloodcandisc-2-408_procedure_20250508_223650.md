@@ -1,0 +1,3 @@
+The provided content does not contain a specific "PROCEDURE" section. However, it does include detailed descriptions of various processes related to the manufacturing of CAR T cells throughout the text. The relevant information can be found in sections discussing the manufacturing processes, including the steps for obtaining starting materials, quality control, genetic modification strategies, and efforts to shorten manufacturing time.
+
+If you would like, I can summarize the key procedural steps mentioned in the text or extract specific information related to the manufacturing processes. Please let me know how you would like to proceed!

@@ -3,6 +3,7 @@ import sys
 from openai import OpenAI
 from dotenv import load_dotenv
 import datetime
+import re
 
 # Load environment variables
 load_dotenv()
@@ -17,15 +18,28 @@ if not api_key:
 # Initialize OpenAI client
 client = OpenAI(api_key=api_key)
 
-def call_chatgpt(prompt_text):
+def call_chatgpt(content, title):
+    # Improved prompt with more explicit instructions
+    prompt = f"""I have a research paper. The filename suggests it might be titled "{title}". I need to extract the Procedure part of the research paper (may come in different names like inside methodology etc.). If that part includes tables, footnotes, or any other non-normal text type I need to extract it as well. 
+
+I am planning to extract it as a markdown file, you can use markdown table style for the needed parts and if there is contextual overflow into close subsections you can include the transition sentence as well. Handle footnotes in line please.
+
+IMPORTANT: Before responding, thoroughly scan the entire document to identify any procedure, methods, methodology, experimental setup, or protocol sections. Look carefully for sections that describe how the research was conducted, even if they're not explicitly labeled as "procedure".
+
+If there is no procedure or similar section after thoroughly scanning the entire document, just respond with: "The paper does not include a procedure or methodology section."
+
+Here's the content of the paper:
+
+{content}"""
+
     try:
         # Try using gpt-4o-mini first
         print("Attempting to use gpt-4o-mini...")
         response = client.chat.completions.create(
             model="gpt-4o-mini",
             messages=[
-                {"role": "system", "content": "You are a helpful assistant that processes research papers."},
-                {"role": "user", "content": prompt_text}
+                {"role": "system", "content": "You are a helpful assistant specialized in extracting procedural information from scientific papers. You carefully examine the entire document before responding."},
+                {"role": "user", "content": prompt}
             ],
             temperature=0.2,
             max_tokens=1500
@@ -40,8 +54,8 @@ def call_chatgpt(prompt_text):
             response = client.chat.completions.create(
                 model="gpt-3.5-turbo",
                 messages=[
-                    {"role": "system", "content": "You are a helpful assistant that processes research papers."},
-                    {"role": "user", "content": prompt_text}
+                    {"role": "system", "content": "You are a helpful assistant specialized in extracting procedural information from scientific papers. You carefully examine the entire document before responding."},
+                    {"role": "user", "content": prompt}
                 ],
                 temperature=0.2,
                 max_tokens=1500
@@ -72,6 +86,11 @@ def save_output(result, input_file_path):
     print(f"Output saved to: {output_file}")
     return output_file
 
+def extract_title(file_path):
+    # Get the base filename without extension as a fallback title
+    base_title = os.path.splitext(os.path.basename(file_path))[0]
+    return base_title
+
 if __name__ == "__main__":
     print("Running extract_section.py...")
     
@@ -87,14 +106,31 @@ if __name__ == "__main__":
         exit(1)
     
     print(f"Reading file: {file_path}")
-    with open(file_path, "r") as f:
-        content = f.read()
+    try:
+        with open(file_path, "r", encoding="utf-8") as f:
+            content = f.read()
+        
+        # Check if content is too short or seems invalid
+        if len(content) < 100 or content.strip().startswith("![]"):
+            print("[WARNING] File content appears to be very short or invalid.")
+            print(f"First 200 characters: {content[:200]}")
+            
+            # Try reading the file again with different encoding
+            with open(file_path, "r", encoding="latin-1") as f:
+                content = f.read()
+            print(f"Retried reading with different encoding. Content length: {len(content)} characters")
+    except Exception as e:
+        print(f"[ERROR] Failed to read file: {e}")
+        exit(1)
+    
+    # Use filename as title
+    title = extract_title(file_path)
+    print(f"Using title from filename: {title}")
     
     print(f"File read successfully. Content length: {len(content)} characters")
-    prompt = f"Here's the content of a research paper:\n\n{content}\n\nExtract the PROCEDURE section."
     
     print("Calling OpenAI API...")
-    result = call_chatgpt(prompt)
+    result = call_chatgpt(content, title)
     
     print("\n[GPT-4 OUTPUT]\n")
     print(result)
