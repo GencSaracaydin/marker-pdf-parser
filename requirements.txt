@@ -1,3 +1,4 @@
 marker-pdf
 openai
 python-dotenv
+anthropic

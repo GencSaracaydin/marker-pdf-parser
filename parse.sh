@@ -15,7 +15,7 @@ source venv/bin/activate
 # Check if input is a file or directory
 if [ -f "$INPUT_PATH" ]; then
   # It's a file - create a temporary directory
-  echo "[1/2] Parsing single PDF to markdown..."
+  echo "[1/3] Parsing single PDF to markdown..."
   TEMP_DIR="temp_pdf_dir_$(date +%s)"  # Add timestamp to avoid conflicts
   mkdir -p $TEMP_DIR
   
@@ -29,7 +29,7 @@ if [ -f "$INPUT_PATH" ]; then
   
   echo "[✔] Parsing complete. Outputs saved in $OUTPUT_DIR/"
   
-  echo "[2/2] Extracting procedures using GPT..."
+  echo "[2/3] Extracting procedures using LLMs..."
   mkdir -p outputs
   
   # Find the markdown file corresponding to our input PDF
@@ -43,17 +43,20 @@ if [ -f "$INPUT_PATH" ]; then
   fi
   
   for MARKDOWN_FILE in $MARKDOWN_FILES; do
-    echo "Processing $MARKDOWN_FILE"
-    
-    # Run the protocol extraction script on the markdown file
+    echo "Processing with GPT: $MARKDOWN_FILE"
+    # Run the GPT extraction script on the markdown file
     python3 gpt/extract_section.py "$MARKDOWN_FILE"
+    
+    echo "Processing with Claude: $MARKDOWN_FILE"
+    # Run the Claude extraction script on the markdown file
+    python3 gpt/extract_section_claude.py "$MARKDOWN_FILE"
   done
   
   # Clean up
   rm -rf "$TEMP_DIR"
 else
   # It's a directory
-  echo "[1/2] Parsing all PDFs in directory to markdown..."
+  echo "[1/3] Parsing all PDFs in directory to markdown..."
   
   # Parse the PDFs
   ulimit -n 4096
@@ -61,16 +64,21 @@ else
   
   echo "[✔] Parsing complete. Outputs saved in $OUTPUT_DIR/"
   
-  echo "[2/2] Extracting procedures using GPT..."
+  echo "[2/3] Extracting procedures using LLMs..."
   mkdir -p outputs
   
   # Find all markdown files in the output directory
   find ./$OUTPUT_DIR -name "*.md" | while read markdown_file; do
-    echo "Processing $markdown_file"
-    
-    # Run the protocol extraction script on each markdown file
+    echo "Processing with GPT: $markdown_file"
+    # Run the GPT extraction script on each markdown file
     python3 gpt/extract_section.py "$markdown_file"
+    
+    echo "Processing with Claude: $markdown_file"
+    # Run the Claude extraction script on each markdown file
+    python3 gpt/extract_section_claude.py "$markdown_file"
   done
 fi
 
-echo "[✔] Extraction complete. Outputs saved in outputs/"
+echo "[3/3] LLM extractions complete..."
+echo "All extractions complete. GPT and Claude outputs saved in outputs/ directory"
+echo "[✔] Process complete. Check the outputs directory for results."
